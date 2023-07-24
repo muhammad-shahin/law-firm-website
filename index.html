@@ -20,15 +20,16 @@
     <!-- Internal CSS -->
     <style>
       /* Button Style */
-      .main-btn {
-        padding: 18px 25px;
+      .legal-btn {
+        padding: 1.5vh 1vw;
         background-color: #b68c5a;
         color: white;
         color: #fff;
         font-family: "Poppins", sans-serif;
         font-size: 18px;
-        font-weight: 600;
+        font-weight: 500;
         border: none;
+        border-radius: 8px;
       }
       .circle-btn {
         width: 45px;
@@ -59,6 +60,63 @@
     <title>Law Firm - Legal Solutions</title>
   </head>
   <body>
-    <h1 class="text-primaryBtn">Hello Ji color diya dichi</h1>
+    <!-- Nav bar -->
+    <header class="md:container md:mx-auto">
+      <div class="navbar bg-base-100">
+        <div class="navbar-start">
+          <div class="dropdown">
+            <label tabindex="0" class="btn btn-ghost lg:hidden">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+            </label>
+            <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+              <li><a class="legal-des">Home</a></li>
+              <li><a class="legal-des">Service <img src="images/arrow.png"></a></li>
+              <li><a class="legal-des">Cases <img src="images/arrow.png"></a></li>
+              <li><a class="legal-des">Blog <img src="images/arrow.png"></a></li>
+              <li><a class="legal-des">Contact Us <img src="images/arrow.png"></a></li>
+            </ul>
+          </div>
+          <img src="images/logo2.png">
+        </div>
+        <div class="navbar-center hidden lg:flex">
+          <ul class="menu menu-horizontal px-1">
+            <li><a class="legal-des">Home</a></li>
+              <li><a class="legal-des">Service <img src="images/arrow.png"></a></li>
+              <li><a class="legal-des">Cases <img src="images/arrow.png"></a></li>
+              <li><a class="legal-des">Blog <img src="images/arrow.png"></a></li>
+              <li><a class="legal-des">Contact Us <img src="images/arrow.png"></a></li>
+          </ul>
+        </div>
+        <div class="navbar-end">
+          <a class="legal-btn">Free Consultation</a>
+        </div>
+      </div>
+    </header>
+    <!-- Main -->
+    <main class="md:container md:mx-auto">
+      <!-- Banner Section -->
+      <section>
+        <div class="hero h-[70vh] mt-12 mb-[5vh]" style="background-image: url('./images/banner.png');">
+          <div class="hero-overlay bg-opacity-60"></div>
+          <div class="hero-content text-center text-neutral-content">
+            <div class="lg:max-w-[75%] mx-auto">
+              <h1 class="mb-5 text-[72px] font-bold  text-white font-['EB Garamond']">We Provide Effective Legal Solutions</h1>
+              <p class="mb-5 lg:max-w-[75%] mx-auto">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.</p>
+              <div class="flex justify-center items-center gap-3 mx-auto">
+                <input type="text" placeholder="Search your services" class="w-[80%] mx-auto min-h-[5vh] rounded-lg legal-des text-left p-4">
+                <button class="legal-btn">Search</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- legal practice section-->
+      <section>
+        <div>
+          
+        </div>
+      </section>
+    </main>
   </body>
 </html>
